@@ -63,21 +63,15 @@ Add the following lines to your script. If you don ot have one, use the example:
 
 alias ll='ls -all'
 alias dir='ls -all'
-alias bdf='df -Ph'
-
-
-HOSTNAME=$(hostname -s)
-WHOAMI=$(whoami)
-PWD=`pwd`
-export HOSTNAME WHOAMI PWD
-
-PS1="${WHOAMI}@${HOSTNAME}:${PWD} $ "
-export PS1
+alias bdf='df -Ph | grep -iv time'
 
 if [ -f ${HOME}/oracle.client ] ; then
    source ${HOME}/oracle.client
 fi
 
+export GH=/Users/${USER}/Documents/GitHub
+
+export PS1="\u@\h\w $ "
 
 ````
 
