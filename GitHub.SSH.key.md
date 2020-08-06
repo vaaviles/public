@@ -25,11 +25,9 @@ your GitHub account.
     ls -al ~/.ssh
 ````
 
-*
-Do you see any files named id_rsa and id_rsa.pub?
-If yes go to Step 3
-If no, you need to generate them
-*
+> Do you see any files named id_rsa and id_rsa.pub?
+> If yes go to Step 3
+> If no, you need to generate them
 
 **Step 3:** Generate a new SSH key
 ````bash
