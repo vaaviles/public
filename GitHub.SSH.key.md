@@ -80,9 +80,8 @@ git push
 git log
 
 # Table of Contents
-[gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
+# https://github.com/ekalinin/github-markdown-toc.go
 gh-md-toc GitHub.SSH.key.md > toc
-
 
 #
 alias gitdelta='git diff --name-only `git merge-base origin/master HEAD`'
