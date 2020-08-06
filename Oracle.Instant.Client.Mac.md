@@ -1,5 +1,5 @@
 
-# Installing Oracle Instant Client on a Mac 
+# Installing Instant Client Downloads for macOS (Intel x86)
 
 
 ## 1.- Create a directory to store the Oracle software 
