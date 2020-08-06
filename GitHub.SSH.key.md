@@ -54,3 +54,23 @@ Then past the content of your command below
     git clone git@github.com:<GITHUB_USER_NAME>/<GITHUB_REPOSITORY_NAME>.git --config core.sshCommand="ssh -i ~/.ssh/id_rsa"    
 ````
 
+## Additional commands:
+
+````bash
+
+
+# Only needs to be run once
+git config --global push.default simple
+
+#
+git add -A
+git commit -m "Updated By "`whoami`" on $(date +'%Y-%m-%d %H:%M:%S') | Release 1.0.0"
+git push
+git log
+
+#
+alias gitdelta='git diff --name-only `git merge-base origin/master HEAD`'
+
+
+
+````
