@@ -5,7 +5,6 @@ Table of Contents
   * [Adding an SSH key to your GitHub account](#adding-an-ssh-key-to-your-github-account)
     * [Additional commands:](#additional-commands)
 
-Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 
 # Adding an SSH key to your GitHub account
