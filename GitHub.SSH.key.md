@@ -61,12 +61,16 @@ Then past the content of your command below
 
 # Only needs to be run once
 git config --global push.default simple
+git config --global user.name  "First Last"
+git config --global user.email "user@domain.com"
+
 
 #
 git add -A
-git commit -m "Updated By "`whoami`" on $(date +'%Y-%m-%d %H:%M:%S') | Release 1.0.0"
+git commit -m "Updated on $(date +'%Y-%m-%d %H:%M:%S') | Release 1.0.0"
 git push
 git log
+
 
 #
 alias gitdelta='git diff --name-only `git merge-base origin/master HEAD`'
