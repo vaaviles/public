@@ -23,7 +23,7 @@ Inline CSS
 
 ````
 
-## Interactive Report: Build URL on SQL 
+## Interactive Report: Build URL 
 
 Dynamically create a calling URL.
 
@@ -31,16 +31,20 @@ Dynamically create a calling URL.
      APEX_UTIL.PREPARE_URL (
              'f?p='
           || V ('APP_ID')
-          || ':12:'
+          || ':NN:'
           || V ('SESSION')
-          || ' ::::P12_ID:'
-          || <COLUMN>
+          || ' ::::PNN_ID:'
+          || <COLUMN_VALUE>
           || '')
           AS EDIT_LINK
 
 ````
 
-## Charts / Cards: Build URL on SQL 
+**Where:**
+
+- NN: Target Page
+
+## Charts / Cards: Build URL and filter target dynamic report 
 
 Dynamically create a calling URL and filter a dynamic report.
 
@@ -48,9 +52,9 @@ Dynamically create a calling URL and filter a dynamic report.
      APEX_UTIL.PREPARE_URL (
              'f?p='
           || v ('APP_ID')
-          || ':5:'
+          || ':NN:'
           || v ('SESSION')
-          || ' :::RIR,CIR:IR[MY_REPORT]IN_MY_COLUMN_NAME:'
+          || ':::RIR,CIR:IR[MY_REPORT]IN_MY_COLUMN_NAME:'
           || NAME
           || '')
 
@@ -58,6 +62,7 @@ Dynamically create a calling URL and filter a dynamic report.
 
 ** Where :**
 
+- NN: Target Page
 - RIR,CIR : clear report filters
 - IR Prefix mandatory
 - [MY_REPORT] : Static Id of Interactive Report.
