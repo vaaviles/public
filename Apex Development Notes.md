@@ -33,7 +33,7 @@ Dynamically create a calling URL.
           || V ('APP_ID')
           || ':NN:'
           || V ('SESSION')
-          || ' ::::PNN_ID:'
+          || '::::PNN_ID:'
           || <COLUMN_VALUE>
           || '')
           AS EDIT_LINK
@@ -55,7 +55,7 @@ Dynamically create a calling URL and filter a dynamic report.
           || ':NN:'
           || v ('SESSION')
           || ':::RIR,CIR:IR[MY_REPORT]IN_MY_COLUMN_NAME:'
-          || NAME
+          || TARGET_VALUE_TO_SEARCH
           || '')
 
 ````
@@ -63,12 +63,12 @@ Dynamically create a calling URL and filter a dynamic report.
 ** Where :**
 
 - NN: Target Page
-- RIR,CIR : clear report filters
-- IR Prefix mandatory
+- RIR,CIR : Clear Report filters
+- IR : Prefix Mandatory
 - [MY_REPORT] : Static Id of Interactive Report.
-- IN interactive report filter IN operator ( see operator list below)
-- MY_COLUMN_NAME:  interactive report column name.
-- \value to serch\ value of filter.
+- IN : Report filter IN operator ( see operator list below)
+- MY_COLUMN_NAME: Interactive report column name.
+- TARGET_VALUE_TO_SEARCH: Value of filter.
 
 
  ### Operator List
