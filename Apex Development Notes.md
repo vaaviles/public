@@ -44,7 +44,7 @@ Dynamically create a calling URL.
 
 - NN: Target Page
 
-## Charts / Cards: Build URL and filter target dynamic report 
+## Reports / Charts / Cards: Build URL and filter target dynamic report 
 
 Dynamically create a calling URL and filter a dynamic report.
 
